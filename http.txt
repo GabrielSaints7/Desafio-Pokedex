@@ -1,0 +1,66 @@
+    Requisição HTTP
+
+        é um protocolo de comunicação Cliente-Servidor
+
+        URL: https://pokeapi.co/api/v2/pokemon/
+
+        ip ou endereço: https://pokeapi.co
+        recurso ou path(caminho):            /api/v2/pokemon/
+
+TIPOS de Requisição
+
+    Request Method: GET | POST | PUT | DELETE | PATCH
+
+    GET - Buscar ou solicitar algo 
+    POST - Inserir ou Adicionar algo
+    PUT - Atualizar algo
+    DELETE - Deletar ou Remover algo
+
+Áreas de Transferência de dados
+    
+    1) recurso - caminho de identificação do recurso
+    ex: https://pokeapi.co/api/v2/pokemon/1 ou 2, 3,4 ...
+    acessar diretamente o recurso
+
+    1) Query string = Sempre possui chave e valor, e pode vir após
+    sinal de interrogação
+        ex: https://pokeapi.co/api/v2/pokemon?type=grass&name=i
+
+        especificando chave e valor a ser solicitado
+        
+        type = grass - tipo grass
+        name = i - nome iniciados por i
+
+Request Headers
+    são metadados ou coisas para descrever nossa Requisição
+    Configuração
+    Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+
+Response Headers
+    são os dados de resposta que o servidor está retornando
+
+    Configuração:
+    content-type: application/json; charset=utf-8
+
+Request BODY: - serve para POST e PUT
+    serve para passar especificações da solicitação
+    O que vai no BODY é de acordo com o content-type;
+
+    ex:
+
+    {
+        "name": "Test"
+    }
+
+
+Response
+STATUS CODE - significa o que aconteceu com a Requisição, se foi processada ou não
+    200 - 299 = sucesso
+    300 - 999 = redirect
+    400 - 499 = erro por parte do cliente
+    500 - 599 = erro interno no servidor
+
+
+response Headers
+
+Response BODY
