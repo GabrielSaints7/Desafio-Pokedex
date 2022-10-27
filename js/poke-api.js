@@ -20,6 +20,18 @@ function convertPokeApiDetailToPokemon(pokeDetail){
     pokemon.type = type
 
     pokemon.photo = pokeDetail.sprites.other.dream_world.front_default
+    
+    pokemon.specie = pokeDetail.specieDefinida;
+    pokemon.height = (pokeDetail.height*10)
+    pokemon.weight = (pokeDetail.weight/10)
+    pokemon.abilities = pokeDetail.abilities.map((skill) => skill.ability.name).join(', ')
+
+    /* pokemon.hp = 
+    pokemon.attack = 
+    pokemon.defense = 
+    pokemon.specialAttack = 
+    pokemon.specialDefense = 
+    pokemon.speed = */
 
     return pokemon
 }
@@ -29,6 +41,11 @@ pokeApi.getpokemonsDetail = (pokemon) => {
     .then(convertPokeApiDetailToPokemon)
 }
 
+pokeApi.getpokemonsDetailSpecie = (pokemon) =>{
+    return fetch(pokemon.species.url).then((response) => response.json())
+    .then((specie) => {specie.egg_groups})
+    .then(specieDefinida)
+}
 /* Método Fetch de Requisição HTTP
     Fetch = solicita url
     then = retorna a requisição caso sucesso

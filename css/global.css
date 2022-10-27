@@ -89,7 +89,17 @@ body {
 }
 
 .content h1 {
+    font-size: 50px;
     text-align: center;
+    position: relative;
+    z-index: 1;
+    background: linear-gradient(to bottom right, rgb(0, 34, 255), rgb(0, 34, 255), rgb(81, 121, 254), rgb(165, 237, 182), rgb(250, 232, 90), rgb(253, 172, 62), rgb(255, 92, 0)) padding-box text;
+
+
+    background-repeat: repeat;
+    background-size: 100% 100%;
+    animation: gradient 2s ease infinite;
+    -webkit-text-fill-color: transparent;
 }
 
 @media screen and (min-width: 992px) {

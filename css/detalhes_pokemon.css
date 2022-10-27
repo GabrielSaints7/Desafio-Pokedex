@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+body {}
+
+
+.normal {
+    background-color: #c2c287;
+}
+
+.fire {
+    background-color: #ff6e06;
+}
+
+.water {
+    background-color: #2161f5;
+}
+
+.grass {
+    background-color: #4dbb16;
+}
+
+.electric {
+    background-color: #fdce11;
+}
+
+.ice {
+    background-color: #4be0e0;
+}
+
+.ground {
+    background-color: #d3ac40;
+}
+
+.flying {
+    background-color: #6337e6;
+}
+
+.poison {
+    background-color: #a72aa7;
+}
+
+.fighting {
+    background-color: #b92018;
+}
+
+.psychic {
+    background-color: #f73770;
+}
+
+.dark {
+    background-color: #694d3b;
+}
+
+.rock {
+    background-color: #af941c;
+}
+
+.bug {
+    background-color: #a6b615;
+}
+
+.ghost {
+    background-color: #624394;
+}
+
+.steel {
+    background-color: #9d9db8;
+}
+
+.dragon {
+    background-color: #6326f3;
+}
+
+.fairy {
+    background-color: #A8B820;
+}
+
+.backgroundColor {
+    width: 100vw;
+    heigth: 100vh;
+    background-color: white;
+}
+
+.icons {
+    width: auto;
+    height: 3em;
+}
+
+.pokemonDetails {
+    width: 100vw;
+    height: 100vh;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.informacoesGerais {
+    height: 75vh;
+}
+
+.dadosEspecificos {
+    height: 100vh;
+    width: auto;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 2rem;
+    box-shadow: 0px 5px 10px 1px rgba(30, 60, 50, .5);
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.detalhesConf {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+}
+
+.dadosDoPokemon {
+    margin: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.dadosDoPokemon h1 {
+    margin-bottom: 1rem;
+
+}
+
+.informacoesGerais .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.informacoesGerais .img img {
+    justify-content: center;
+    max-width: 100%;
+    height: 210px;
+    margin: 20px 20px 0;
+}
+
+.dadosNomes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: large;
+    color: white;
+    margin-top: px;
+}
+
+.nomePoke{
+    text-transform: capitalize;
+}
+
+.dadosNomes h1 {
+    font-size: xx-large;
+}
+
+.dadosTipos {
+    display: flex;
+}
+
+.dadosTipos h3 {
+    margin-right: 15px;
+}
+
+.dadosEspecificos h1 {
+    text-transform: capitalize;
+    text-align: center;
+
+    font-size: x-large;
+}
+
+.dadosEspecificos .menu {
+
+    margin: 1rem;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.dadosEspecificos .menu .aba a {
+    list-style: none;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.dadosEspecificos .menu .aba a:target {
+    text-decoration: underline;
+}
+
+.dadosEspecificos article {
+    position: relative;
+}
+
+.dadosEspecificos article section {
+    position: absolute;
+    padding: 8px;
+    border: 1px solid #DDD;
+    border-radius: 2px;
+    background: #FFF;
+    z-index: 0;
+    width: 100%;
+    height: 30vh;
+}
+
+.menu .aba a:visited {}
+
+.dadosEspecificos article section.active {
+    z-index: 1;
+    display: flex;
+
+}
+
+.especificacoes {
+    margin-right: 2rem;
+}
+
+.especificacoes h3 {
+    margin-top: 2rem;
+}
+
+.Resultadosespecificacoes {
+    color: rgb(48, 48, 48);
+}
+
+.Resultadosespecificacoes h3 {
+    margin-top: 2rem;
+}
+
+.aba2 {
+    display: flex;
+}
+
+.aba2 h3{
+    margin-top: 1rem;
+
+}
+
+.type{
+    margin-right: 10px;
+    padding: .5rem;
+    background-color: rgba(255, 255, 255, 0.247);
+    border-radius: 1rem;
+}
+
+/* Target cria a referência do elemento clicado */
+.dadosEspecificos article section:target {
+    z-index: 2;
+}
